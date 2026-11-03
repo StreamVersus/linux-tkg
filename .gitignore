@@ -28,3 +28,10 @@ current_env
 BIG_UGLY_FROGMINER
 linux-kernel.git/
 linux-src-git/
+
+# Local CI state and generated build products
+/cache/
+/artifacts/
+/state/
+
+/ci/__pycache__/

@@ -1,0 +1,13 @@
+when:
+  - event: [push, manual]
+    branch: master
+
+labels:
+  role: kernel
+
+steps:
+  - name: kernel-packages
+    image: local/linux-tkg-builder:20261103
+    pull: never
+    commands:
+      - /opt/linux-tkg-ci/build.sh
