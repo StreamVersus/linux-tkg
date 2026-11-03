@@ -8,6 +8,6 @@ labels:
 steps:
   - name: kernel-packages
     image: local/linux-tkg-builder:20261103
-    pull: never
+    pull: false
     commands:
       - /opt/linux-tkg-ci/build.sh
